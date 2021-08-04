@@ -1,0 +1,8 @@
+# Bitte nicht als eigenes Ausgeben!
+# Die Config wird erst ab der nächsten Version verwendet. Derzeit ist sie nur für Developer!
+# Es wird auch eine -BETA- Version geben und ein TestServer, wo ihr ab der nächsten neuen Version meine Plugins testen könnt.
+
+prefixe:
+    prefix: "§bCore ✘ "
+    noperms: "§bCore ✘ §cDu hast keine Rechte! "
+    error: "§bCore ✘ §cEs ist ein Fehler passiert."

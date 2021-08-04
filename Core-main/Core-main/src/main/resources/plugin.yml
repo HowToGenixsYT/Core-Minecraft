@@ -1,0 +1,89 @@
+name: Core
+main: de.HowToGenius.main.Main
+version: 1.0
+author: HowToGenius
+description: Dieses Plugin darf nicht als sein eigenes Ausgegeben werden!
+
+permissions:
+  core.usecommand.*:
+    desription: Gebe alle ausgaben Von diesem Plugin
+    children:
+      core.usecommand.gamemode: true
+      core.usecommand.time: true
+      core.usecommand.broadcast: true
+      core.usecommand.admin.*: true
+      core.usecommand.fly: true
+      core.usecommand.heal: true
+
+  core.usecommand.admin.*:
+    description: Gebe alle Admin commands
+    children:
+      core.usecommand.warn: true
+      core.usecommand.warnIp: true
+      core.usecommand.kick: true
+      core.usecommand.notify: true
+      core.usecommand.notify: true
+
+  core.usecommand.gm:
+    description: Allow change player gamemode
+    default: op
+  core.usecommand.time:
+    description: Allow change time in the world
+    default: op
+  core.usecommand.broadcast:
+    description: Allow send broadcast message
+    default: op
+  core.usecommand.fly:
+    description: Allow fly to the sky
+    default: op
+  core.usecommand.heal:
+    description: Healng you
+    default: op
+  core.usecommand.warn:
+    description: Allow ban players
+    default: op
+  core.usecommand.warnIp:
+    description: Allow ban ip players
+    default: op
+  core.usecommand.kick:
+    description: Allow kick players
+    default: op
+  core.usecommand.notify:
+    description: Allow to use notify
+    default: op
+  core.usecommand.prefix:
+    description: Allow to use prefix
+    default: op
+
+commands:
+  gamemode:
+    description: Ändere dein Gamemode oder andere Gamemodes
+    usage: /gm <mode>
+    aliases: [ gm, gamem, gmode ]
+  day:
+    description: Setze die Zeit zu Tag
+    usage: /day
+  night:
+    description: Setzte die Zeit zu Nacht
+    usage: /night
+  broadcast:
+    description: sende eine Broadcast Nachricht
+    usage: /bc <message>
+    aliases: bc
+  fly:
+    description: Setze dich in den Fliegemodus
+    usage: /fly <player>
+  punish:
+    description: Banne einen Spieler
+    usage: /punish <player> <reason>
+  unpun:
+    description: Entbanne einen Spieler
+    usage: /unpun <player>
+    aliases: uwarn
+  kick:
+    description: Kicke einen Spieler vom Server
+    usage: /kick <player> <reason>
+  notify:
+    description: Schalte die Notify an oder aus
+  prefix:
+    description: Setze ein Prefix für das Plugin!
